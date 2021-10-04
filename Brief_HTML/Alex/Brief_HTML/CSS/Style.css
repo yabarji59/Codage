@@ -1,0 +1,17 @@
+p
+{color: blue;
+}
+
+li {
+	color: grey;
+	font-size: xx-large;
+}
+
+a{
+	color: purple;
+}
+
+body {
+background-image:url(../images/background.jpg);
+background-size: cover;
+}
