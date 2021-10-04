@@ -1,3 +1,7 @@
+:root {
+    --menu-height: 50px;
+}
+
 html {
     font-family: 'Open Sans', sans-serif;
     color: white;
@@ -17,33 +21,45 @@ body {
 
 menu {
     background-color: white;
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     margin: 0;
     padding: 0;
     text-align: right;
-    height: 50px;
+    height: var(--menu-height);
     line-height: 50px;
+}
+
+a{
+    text-decoration: none;
 }
 
 nav {
        margin-right: 10%;
 }
 
-nav ul {
+nav > ul {
     padding: 0;
     margin: 0;
+    display: flex;
+    height: var(--menu-height);
 }
 
-nav ul li {
+nav > ul > li {
    display: inline;
    padding-left: 2%;
    padding-right:5%;
    text-transform: uppercase;
    font-weight: bold;
    color: darkgrey;  
-   position: relative;      
+   position: relative;
+   height: 100%;  
+   flex: 1;    
+}
+
+nav > ul > li > a {
+    color : darkgrey;
 }
 
 nav li img {
@@ -163,22 +179,55 @@ footer img {
 }
 
 .submenu {
-    display:none;
-    background-color: lightgray;
-    width: 200px;    
-}
+    /*margin-top: var(--menu-height);*/
+    width: 100%;
+    background-color: rgb(252, 252, 252);
+    overflow: hidden;
+    max-height: 0;
+} 
+  
 
 nav > ul li:hover .submenu {
     display: block;
     position: absolute;
-    left: 10%;
+    
 }
 
-.submenu li {
-    display: block;
+.submenu > li > a {
+    display: flex;
     text-align: left;
     float: none;
     width:100%;
     padding-left: 5%;
-    
+    color: darkgray;
+    font-weight: lighter!important;         
+}
+
+
+
+.submenu > li:hover a{
+    color:white;
+}
+
+li:hover > .submenu{
+  animation: displaySubmenu 1s forwards;
+}
+
+.submenu li:hover{
+    background-color: darkslategray;
+    color: white;
+}
+
+@keyframes displaySubmenu{
+    0% {
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
+     
+    }
+    30% {
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+    }
+    100% {
+      max-height: 50em;
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+    }
 }
