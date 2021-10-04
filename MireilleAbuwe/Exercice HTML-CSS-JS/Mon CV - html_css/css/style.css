@@ -1,0 +1,88 @@
+.body {
+  padding: 30px;
+  background-color: #fcfcfc;
+}
+
+.picture {
+  background-image: url("../image/developpeur.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  height: 300px;
+  width: 100%;
+  opacity: 0.1;
+  position: absolute;
+}
+.div1 {
+  padding: 50px;
+  height: 300px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.menu {
+  width: 95%;
+  height: 300px;
+ 
+  box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.choice {
+  background-image: url("../image/mimi.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.div2,
+.div3,
+.div4,
+.div5,
+.div6 {
+  padding: 30px;
+  height: 500px;
+  width: 100%;
+}
+.text {
+  float: left;
+  padding: 10px;
+  width: 80%;
+  height: 400px;
+  margin: auto;
+  box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  justify-content: space-around;
+}
+div#col1 {
+  float: left;
+  width: 160px;
+}
+div#col2 {
+    float: center;
+    text-align: justify;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+}
+div#col3 {
+  float: right;
+}
+.header {
+  background-image: url("../image/photoFond4-800x369.jpg");
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  font-size: medium;
+  fill-opacity: inherit;
+}
+
+.footer {
+  background-color: white;
+  background-size: cover;
+  text-align: center;
+}
+
+/** 
+1- to do : espace entre colonne et ligne des choix;
+2- refaire le menu en mode colonne et ligne;
+3- remplir les autres categories du choix du menu;
+4- rendre la photo opaque ;
+ **/
