@@ -21,34 +21,55 @@ menu {
     margin: 0;
     padding: 0;
     text-align: right;
+    height: 50px;
+    line-height: 50px;
 }
 
 nav {
        margin-right: 10%;
 }
-nav li {
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
    display: inline;
-   padding-left: 5%;
+   padding-left: 2%;
    padding-right:5%;
    text-transform: uppercase;
    font-weight: bold;
-   color: darkgrey;
-   overflow:hidden;
-   
+   color: darkgrey;    
+    
 }
+
+li img {
+    width: 30px;
+    vertical-align: middle;
+}
+
 
 h1 {
     color: white;
     text-transform: uppercase;
-    font-size: xx-large;
+    font-size: 150px;
     text-align: center;
     position: center;
 
 }
 
+h2 {
+    color:white;
+    text-transform: uppercase;
+    font-size: 60px;
+    text-align: center;
+    position: center;
+}
+
 #banner {
     margin: 0;
-    background-image: url('img/headerimg.jpg');
+    background-image: url('../img/headerimg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width:100%;
