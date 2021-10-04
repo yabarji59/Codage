@@ -1,9 +1,10 @@
 html {
     font-family: 'Open Sans', sans-serif;
+    color: white;
 }
 
 body {
-    background: linear-gradient(#457c82, black);
+    background: linear-gradient(#457c82,#0f2629);
     background-repeat: no-repeat;
     padding: 0;
     margin: 0;
@@ -16,6 +17,7 @@ body {
 
 menu {
     background-color: white;
+    position: fixed;
     width: 100%;
     top: 0;
     margin: 0;
@@ -29,26 +31,25 @@ nav {
        margin-right: 10%;
 }
 
-ul {
+nav ul {
     padding: 0;
     margin: 0;
 }
 
-li {
+nav ul li {
    display: inline;
    padding-left: 2%;
    padding-right:5%;
    text-transform: uppercase;
    font-weight: bold;
-   color: darkgrey;    
-    
+   color: darkgrey;  
+   position: relative;      
 }
 
-li img {
+nav li img {
     width: 30px;
     vertical-align: middle;
 }
-
 
 h1 {
     color: white;
@@ -56,7 +57,6 @@ h1 {
     font-size: 150px;
     text-align: center;
     position: center;
-
 }
 
 h2 {
@@ -67,6 +67,12 @@ h2 {
     position: center;
 }
 
+h3 {
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+}
+
 #banner {
     margin: 0;
     background-image: url('../img/headerimg.jpg');
@@ -75,4 +81,104 @@ h2 {
     width:100%;
     height: 750px;
     overflow: hidden;
+}
+
+#commands {
+    margin-top: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+}
+
+#commands img { 
+    display: block;
+    width: 20%;
+    border-radius: 380px;
+    margin: auto;
+}
+
+#commands li {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 1;
+    list-style-type: none;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+#commands li p{
+    grid-column: 2/2;
+    grid-row: 1/1;
+    vertical-align: middle;    
+}
+
+#commands li img {
+    grid-column: 1/2;
+    width: 50px;
+    vertical-align: middle;
+    
+}
+
+.smalltext {
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+footer {
+    background:linear-gradient(to right,lightcoral, orange);
+    bottom: 0;
+    height: 100px;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    padding: 0;
+    margin: 0;
+}
+
+footer a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+     
+
+}
+
+footer img {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    padding-bottom: 2px;
+}
+
+.footer-container {
+    padding-top: 10px;
+    display: block;
+    align-self: center;
+    height: 80px;
+}
+
+.submenu {
+    display:none;
+    background-color: lightgray;
+    width: 200px;    
+}
+
+nav > ul li:hover .submenu {
+    display: block;
+    position: absolute;
+    left: 10%;
+}
+
+.submenu li {
+    display: block;
+    text-align: left;
+    float: none;
+    width:100%;
+    padding-left: 5%;
+    
 }
