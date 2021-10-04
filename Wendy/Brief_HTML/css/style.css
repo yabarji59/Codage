@@ -1,0 +1,46 @@
+h1{
+    display: flex;
+    justify-content: center;
+    color: pink;
+    padding:20px;
+    margin-top:60px;
+}
+
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: palevioletred;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: purple;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: pink;
+}
+
+.active {
+  background-color: pink;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    
+}
