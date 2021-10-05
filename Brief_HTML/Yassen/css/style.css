@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    font-size: 1.6rem;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background-color: salmon;
+    color: white;
+    padding: 2rem 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* à partir de la tablette  */
+@media screen and (min-width: 768px) {
+    .recipes {
+        display: flex;
+    }
+
+    .recipe {
+        padding: 0 1rem;
+    }
+}
+
+/* uniquement pour la tablette */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .recipes {
+        flex-wrap: wrap;
+    }
+
+    .recipe {
+        flex-basis: 50%;
+    }
+}
+
+.recipe img {
+    width: 100%;
+}
+
+
+
+
+li {
+    display: inline;
+  }
+ 
+  
+  a {
+    display: block;
+    padding: 8px;
+    background-color: #dda5a8;
+    
+  }
+ 
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+  }
+  
+ 
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Changer la couleur pour cliquer*/
+  li a:hover {
+    background-color: #dda5a8;
+  }
+  .active {
+    background-color: #b3b0b0;
+  }
+  ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  nav{
+      background-color: #dda5a8;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  img{
+      width: 10%;
+      
+  }
+  div.Menu{
+    background-image: url('img/simplon\ img.jpg'); 
+    margin: 0 0 32px;
+    font-size: 32px;
+    line-height: 600px;
+    font-family: "Montserrat",arial,sans-serif;
+    font-weight: 700;
+    color: rgb(170, 38, 38);
+}  
