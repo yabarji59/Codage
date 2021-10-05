@@ -43,10 +43,13 @@ display: flex;
 
 .section{
     text-align: center;
-    border: 3px blue dashed;
     margin-bottom: 30px;
     width: 50%;
     
+}
+
+.fluffy{
+    width: 50%;
 }
 
 .article{
@@ -59,7 +62,6 @@ display: flex;
 }
 
 .aside{
-    border: 3px blue dashed;
     text-align: center;
     width:50%;
     margin-left: 10px;
