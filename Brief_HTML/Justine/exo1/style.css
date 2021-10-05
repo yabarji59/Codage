@@ -4,16 +4,18 @@
     list-style:none;
 }
 body{
-    background-color:rgb(212, 220, 235);
+    background-color:rgb(233, 238, 246);
     color: rgb(219, 219, 246);
 }
+
 @media only screen and (min-width : 1224px){
     /* Styles pour cette Media Queries */
+    /** pc **/
     header{
         background-image:url('./img/techno.jpg');
         width:100%;
         height:220px;
-        border-bottom:1px solid rgb(136, 240, 98);
+        border-bottom:10px solid rgb(215, 215, 238);
     }
         nav{
             padding-top:30px;
@@ -35,8 +37,7 @@ body{
     }
         h2{
             margin-top:100px;
-            background-color:rgb(9, 9, 56);
-            color:rgb(136, 240, 98);
+            color:rgb(9, 9, 56);
             padding:10px;
             width:100px;
 
@@ -76,11 +77,13 @@ body{
                 }
             aside{
                 position:relative;
+                background-color:white;
                 color:rgb(9, 9, 56);
-                top:30px;
+                border:10px solid rgb(247, 247, 251);
+                top:0;
                 float:right;
                 width:300px;
-                height:670px;
+                height:1022px;
                 padding:20px;
                 margin-right:100px;
             }
@@ -96,7 +99,7 @@ body{
 
 
     footer{
-        background-color:rgb(136, 240, 98);
+        background-color:rgb(251, 251, 253);
         color:rgb(9, 9, 56);
         height:100px;
         text-align:center;
@@ -116,11 +119,14 @@ body{
                 color:white;
             }
     }
-    @media only screen and (max-width : 1223px) {
+
+    
+    @media only screen and (max-width : 766px) {
         /* Styles pour cette Media Queries */
+        /** phone **/
             *{
                 min-width:320px;
-                max-width:1223px;
+                max-width:766px;
                 width:100%;
             }
            header{
@@ -235,4 +241,124 @@ body{
                 border:1px solid white;
                 color:rgb(8, 8, 8);
             }
+        }
+
+        @media only screen and (min-width : 1024px) and (max-width :1223px) {
+            /** tablette **/
+            *{
+                min-width:1024px;
+                max-width:1223px;
+                width:100%;
+            }
+           header{
+            background-image:url('./img/techno.jpg');
+            width:100%;
+            height:220px;
+            border-bottom:1px solid rgb(136, 240, 98);
+            }
+                nav{
+                    padding-top:30px;
+                    padding-left:10px;
+                }
+                    nav li{
+                        padding-left:30px;
+                        font-size:1.3em;
+                        display:inline;
+                    }
+                    nav li:hover{
+                        text-decoration: underline;
+                    }
+
+                h1{
+                    opacity:0.2;
+                    color:silver;
+                    padding:20px;
+                }
+                    h2{
+                        color:rgb(9, 9, 56);
+                        padding-left:30px;
+                    }
+                        h3{
+                            font-size:2em;
+                            color:rgb(9, 9, 56);
+                            text-align:center;
+                        }
+                article{
+                    margin:0;
+                    margin-bottom:100px;
+                    width:65%;
+                }
+                    .article-capgemini{
+                        padding:20px;
+                    }
+                    .article-telescope{
+                        padding:20px;
+                    }
+                      article img{
+                          width:200px;
+                      }
+                        article text{
+                            text-align:center;
+                        }
+                            article .text p{
+                                padding-top:10px;
+                                padding-left:20px;
+                                padding-right:20px;
+                                padding-bottom:40px;
+                                text-align:left;
+                                color:rgb(65, 95, 177);
+                            }
+                    aside{
+                        color:rgb(9, 9, 56);
+                        top:50px;
+                        height:300px;
+                        padding:20px;
+                    }
+                        aside h4{
+                            text-decoration: underline rgb(9, 9, 56);
+                            font-size:2em;
+                            padding-bottom:40px;
+                            text-align:center;
+                        }
+                            aside p{
+                                text-align:center;
+                                color:rgb(9, 9, 56);
+                            }
+
+
+    footer{
+        background-color:black;
+        color:rgb(248, 248, 255);
+        height:200px;
+        text-align:center;
+        padding-top:20px;
+    }
+        .reseaux{
+            padding-right:0;
+        }
+           .fa-facebook{
+               font-size:3em;
+               color:blue;
+               padding-bottom:10px;
+            }
+        section.newsletter{
+            width:auto;
+            height:auto;
+            padding:10px;
+            background-color:rgb(136, 240, 98);
+            color:black;
+        }
+            .newsletter input{
+                width:100px;
+            }
+            /** btn validation ad.mail **/
+            .btn-go{
+                margin:10px;
+                width:20px;
+                height:20px;
+                background-color:rgb(251, 251, 253);
+                border:1px solid white;
+                color:rgb(8, 8, 8);
+            }
+
         }
