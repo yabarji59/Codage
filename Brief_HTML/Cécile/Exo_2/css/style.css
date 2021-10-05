@@ -1,0 +1,41 @@
+.container {
+    display: grid;
+    grid-template-rows: 150px 150px 150px 150px 150px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    margin: 5px;
+    grid-template-areas: 
+    "header header"
+    "main section"
+    "main section"
+    "main section2"
+    "footer footer"
+}
+.page-tittle-item-1 {
+    background-color: rgb(116, 227, 255);
+    grid-area: header;
+}
+
+.main-content-item-2 {
+    background-color: rgb(122, 89, 240);
+    grid-area: main;
+}
+
+.masthead-item-3 {
+    background-color: rgb(19, 16, 245);
+    grid-area: section;
+}
+
+.sidebar-item-4 {
+    background-color: rgb(182, 182, 182);
+    grid-area: section2;
+}
+
+.main-footer-item-5 {
+    background-color: rgb(255, 244, 146);
+    grid-area: footer;S
+}
+
+.text-align-left {
+    text-align: left;
+}
