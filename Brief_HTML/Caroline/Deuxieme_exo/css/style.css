@@ -69,17 +69,20 @@ nav a:active{
 header {
     display:block;
     margin:0;
-    background-image: url('../img/header-img.jpg');
+    margin-top: -50px;
+    background-image:  linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.4)
+      ),url('../img/header-img.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
     height: 500px;
     width: 100%;
-    top: 0;
-    padding-top: 50px;
-    position: fixed;
+    
 }
 
-h1, h2 {
+h1, h2{
  color: white;
  text-align: center;
  text-transform: uppercase;
@@ -89,4 +92,116 @@ h1, h2 {
 
 h1{
     font-size: 100px;
+}
+
+h6{
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: large;
+    font-weight: lighter;
+    padding-bottom: 0;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 5%;
+}
+
+.left-content{
+    flex: 3;
+
+}
+article {     
+    display:block;    
+    margin-left: 10%;
+    margin-top: 8%;
+    background-color: lightgray;   
+
+}
+
+article section {
+    position: relative;
+    top: -100px;
+}
+
+.primepicture{
+    display: block;
+    position: relative;
+    border-radius: 380px;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    top: -100px;   
+}
+
+aside {
+    padding-left: 5%;
+    flex: 1;    
+}
+
+aside > ul {
+    list-style-type: none;
+}
+
+aside > ul > li > a {
+    text-decoration: none;
+    color:lightgray;
+}
+
+aside a:hover {
+    color: goldenrod;
+}
+
+aside a:active{
+    color:gold;
+}
+
+aside > section {
+    padding : 2%;
+}
+
+main section {
+   padding-top : 5%;
+   padding-left: 5%;
+   padding-right: 5%;
+}
+
+
+.page-bottom{
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    background: linear-gradient(to right, rgb(255, 166, 0),rgb(3, 61, 27));
+   
+}
+
+.social-media {
+    display: block;
+    margin-right: 10%;
+    text-align: right;
+    flex: 1;
+}
+.social-media > ul {
+      list-style-type: none;
+}
+
+.social-media > ul > li {
+    display: inline;
+}
+
+.legal {
+    margin-left: 10%;
+    text-align: left;
+    flex: 1;
+}
+.legal > ul {
+    list-style-type: none;
+}
+
+.legal > ul > li {
+    display: inline;
 }
