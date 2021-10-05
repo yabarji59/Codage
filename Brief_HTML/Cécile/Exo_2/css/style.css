@@ -11,7 +11,7 @@
   }
   
   .navbar #myMenu .custom-nav .nav-item a:hover {
-    color: #2e500f;
+    color: #a51a1a;
   }
   
   /* Make Header Image Responsive */
@@ -38,4 +38,12 @@
   
   a:hover {
     color: #E994A2;
+  }
+
+  h2{
+    font-size: 30px;
+    color: #a51a1a;
+  }
+  h4{
+    font-size: 20px;
   }
