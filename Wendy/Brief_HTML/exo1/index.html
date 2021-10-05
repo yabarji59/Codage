@@ -2,20 +2,52 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Wendy - Le Site Web</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <title>Wendy - Le Site des licornes</title>
 </head>
 
 <body>
     <header class="header">
+        <nav class="navbar navbar-expand-lg navbar navbar-custom">
+            <a class="navbar-brand" href="#">Accueil</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="navbar-brand" href="#">Nouveauté <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="https://getbootstrap.com/docs/4.0/components/navbar/#supported-content">A propos</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
         <h1>Je suis un header</h1>
     </header>
 
-    <nav class="nav">
-        <h1>Je suis une nav</h1>
-    </nav>
-    <div class="main">
+
+    <main class="main">
         <section class="section">
             <h1>Je suis une section</h1>
             <div id="containerArticle">
@@ -28,9 +60,9 @@
         <aside class="aside">
             <div id="containerAside"></div>
             <h1>Je suis un aside</h1>
-    </div>
-    </aside>
-    </div>
+            </div>
+        </aside>
+    </main>
 
     <footer class="footer">
         <h1>Je suis un footer</h1>
