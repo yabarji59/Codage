@@ -1,85 +1,81 @@
-.header{
-    margin-bottom: 30px;
+.header {
+  margin-bottom: 30px;
 }
-   /* Modify the background color */
-         
-   .navbar-custom {
-    background-color: palevioletred;
+/* Modify the background color */
+
+.navbar-custom {
+  background-color: red;
 }
 /* Modify brand and text color */
- 
+
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-    color: pink;
+  color: pink;
 }
 
-.nav{
-    border: 3px blue dashed;
-    margin-bottom: 30px;
-    text-align: center;
+.nav {
+  border: 3px blue dashed;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
-h1{
-    display: flex;
-    justify-content: center;
-    color: pink;
-    margin-top: 20px;
-  }
-
-  .carousel-item {
-    height:428px;
-    min-height: 350px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
- 
-
-.main{
-display: flex;
+h1 {
+  display: flex;
+  justify-content: center;
+  color: pink;
+  margin-top: 20px;
 }
 
-.section{
-    text-align: center;
-    margin-bottom: 30px;
-    width: 50%;
-    
+.carousel-item {
+  height: 428px;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.fluffy{
-    width: 50%;
+.main {
+  display: flex;
 }
 
-.article{
-    display: flex;
-    justify-content: center;
-    border: 3px blue dashed;
-    width:50%;
-    margin-bottom: 10px;
-    
+.section {
+  text-align: center;
+  margin-bottom: 30px;
+  width: 50%;
 }
 
-.aside{
-    text-align: center;
-    width:50%;
-    margin-left: 10px;
-    margin-bottom: 30px;
-}
-#containerAside{
-    display: flex;
-    justify-content: right;
+.fluffy {
+  width: 50%;
 }
 
-#containerArticle{
-    display: flex;
-    justify-content: center;
-
+.article {
+  display: flex;
+  justify-content: center;
+  border: 3px blue dashed;
+  width: 50%;
+  margin-bottom: 10px;
 }
 
-.footer{
-    border: 3px blue dashed;
-    margin-bottom: 30px;
-    text-align: center;
+.aside {
+  text-align: center;
+  width: 50%;
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+#containerAside {
+  display: flex;
+  justify-content: right;
+}
+
+#containerArticle {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  border: 3px blue dashed;
+  margin-bottom: 30px;
+  text-align: center;
 }
