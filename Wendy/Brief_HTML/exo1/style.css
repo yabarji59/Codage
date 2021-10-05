@@ -1,3 +1,56 @@
 .header{
     border: 3px blue dashed;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.nav{
+    border: 3px blue dashed;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.main{
+display: flex;
+}
+
+.section{
+    text-align: center;
+    border: 3px blue dashed;
+    margin-bottom: 30px;
+    width: 50%;
+    
+}
+
+.article{
+    display: flex;
+    justify-content: center;
+    border: 3px blue dashed;
+    width:50%;
+    margin-bottom: 10px;
+    
+}
+
+.aside{
+    border: 3px blue dashed;
+    text-align: center;
+    width:50%;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+#containerAside{
+    display: flex;
+    justify-content: right;
+}
+
+#containerArticle{
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer{
+    border: 3px blue dashed;
+    margin-bottom: 30px;
+    text-align: center;
 }
