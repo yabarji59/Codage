@@ -1,17 +1,6 @@
 .header {
   margin-bottom: 30px;
 }
-/* Modify the background color */
-
-.navbar-custom {
-  background-color: blue;
-}
-/* Modify brand and text color */
-
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-text {
-  color: pink;
-}
 
 .nav {
   border: 3px blue dashed;
@@ -22,28 +11,11 @@
 h1 {
   display: flex;
   justify-content: center;
-  color: pink;
   margin-top: 20px;
-}
-
-.carousel-item {
-  height: 428px;
-  min-height: 350px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.main {
-  display: flex;
 }
 
 .section {
   text-align: center;
-  margin-bottom: 30px;
-  width: 50%;
 }
 
 .fluffy {
@@ -60,8 +32,6 @@ h1 {
 
 .aside {
   text-align: center;
-  width: 50%;
-  margin-left: 10px;
   margin-bottom: 30px;
 }
 #containerAside {
