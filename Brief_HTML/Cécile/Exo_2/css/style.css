@@ -11,11 +11,12 @@
   }
   
   .navbar #myMenu .custom-nav .nav-item a:hover {
-    color: #F0AAB1;
+    color: #2e500f;
   }
   
   /* Make Header Image Responsive */
   .back-image {
+    font-size: 20px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -26,12 +27,13 @@
   
   /* Header Image Sub-Title */
   .st {
-    font-size: 24px;
+    color: #f6f7f8;
+    font-size: 50px;
   }
   
   /* Change Footer Social Icon Color */
   a {
-    color: #DC3545;
+    color: #a51a1a;
   }
   
   a:hover {

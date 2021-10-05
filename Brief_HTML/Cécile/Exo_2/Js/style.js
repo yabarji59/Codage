@@ -4,7 +4,7 @@ export default StyleSheet.create({
   // Change Brand Font
   'navbar-brand': {
     'fontFamily': ''Tahoma', sans-serif',
-    'fontSize': [{ 'unit': 'em', 'value': 2 }],
+    'fontSize': [{ 'unit': 'em', 'value': 5 }],
     'fontWeight': 'bold'
   },
   // Change Navigation Color
