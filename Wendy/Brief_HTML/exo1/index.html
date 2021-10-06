@@ -13,41 +13,11 @@
         integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
         crossorigin="anonymous"></script>
 
-
     <title>ShopWendy</title>
 </head>
 
 <body>
-    <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">ShopWendy</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">A propos</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="Rechercher" placeholder="Rechercher" aria-label="Search">
-                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Rechercher</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-    </header>
-
+    <div id="header"></div>
 
     <main class="row">
         <h1>Bienvenue sur le ShopWendy</h1>
@@ -182,54 +152,19 @@
             </div>
         </aside>
     </main>
-
-    <footer class="footer">
-        <div class="footer-dark">
-            <footer>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-3 item">
-                            <h3>AIDE</h3>
-                            <ul>
-                                <li><a href="#">Statut de commande</a></li>
-                                <li><a href="#">expédition et livraision</a></li>
-                                <li><a href="#">Retours</a></li>
-                                <li><a href="#">Mode de paiement</a></li>
-                                <li><a href="#">Nous contacter</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6 col-md-3 item">
-                            <h3>À PROPOS DE NIKE</h3>
-                            <ul>
-                                <li><a href="#">actualités</a></li>
-                                <li><a href="#">Carrière</a></li>
-                                <li><a href="#">Investisseurs</a></li>
-                                <li><a href="#">Développement durable</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 item text">
-                            <h3>Nike</h3>
-                            <p>Comment parler de chaussures de sport sans évoquer Nike ? Créé en 1971,
-                                le groupe américain est effectivement le premier équipementier sportif au monde devant
-                                adidas et Puma.
-                                Sa capacité d’innovation, la diversité de son offre et sa maîtrise de la communication
-                                lui permettent de générer un chiffre d’affaires annuel évalué à plus de 20 milliards
-                                d’euros,
-                                loin devant celui de ses concurrents principaux. Mais pour en arriver là, ses fondateurs
-                                ont parcouru beaucoup de chemin souvent semé d’embuches.</p>
-                        </div>
-                        <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a
-                                href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i
-                                    class="icon ion-social-snapchat"></i></a><a href="#"><i
-                                    class="icon ion-social-instagram"></i></a></div>
-                    </div>
-                    <p class="copyright">© 2021 Nike, Inc. Tous droits réservés</p>
-                </div>
-            </footer>
-        </div>
-    </footer>
+    <div id="footer"></div>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
 
 </body>
-<script type="text/javascript" src="js/index.js"></script>
+
 
 </html>
