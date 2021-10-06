@@ -3,8 +3,7 @@
 }
 
 h1 {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin-top: 20px;
 }
 
@@ -12,13 +11,12 @@ p {
   font-size: 18px;
 }
 
-.section {
-  margin-top: 100px;
-  text-align: center;
+.container-shop {
+  margin-top: 2em;
 }
 
-.nike {
-  width: 50%;
+.section {
+  text-align: center;
 }
 
 .article {
@@ -30,15 +28,14 @@ p {
   text-align: center;
   margin-bottom: 30px;
 }
-#containerAside {
-  display: flex;
-  margin-top: 150px;
-  justify-content: right;
-}
 
-#containerArticle {
-  display: flex;
+.basket-price-container {
+  display: grid;
+  grid-template-columns: auto auto;
   justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
 }
 
 .footer-dark {
@@ -103,24 +100,6 @@ p {
     text-align: center;
     margin-top: 20px;
   }
-}
-
-.footer-dark .item.social > a {
-  font-size: 20px;
-  width: 36px;
-  height: 36px;
-  line-height: 36px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
-  margin: 0 8px;
-  color: #fff;
-  opacity: 0.75;
-}
-
-.footer-dark .item.social > a:hover {
-  opacity: 0.9;
 }
 
 .footer-dark .copyright {
