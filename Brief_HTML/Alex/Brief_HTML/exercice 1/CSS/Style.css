@@ -1,21 +1,19 @@
 /*propriétés du header*/
 
-#banleft img {
-	float: left;
+#banleft {	
 	width: 58%;
 }
 
-#banright img {
+#banright {
 	width:40%;
 }
 
-#banniereglobale{
-	text-align: center;
-	display: inline-block;
+#banniereglobale img{
+	height: 200px;
 }
 
 header{
-	width: 80%;
+	width: 100%;
 	text-align: center;
 }
 
@@ -31,7 +29,7 @@ p
 	text-align: justify;
 }
 
-a{
+a:hover{
 	color: purple;
 }
 
@@ -120,7 +118,7 @@ footer ul {
 	color: white;
 }
 
-footer li {
+footer a, footer li {
 	display: inline-block;
 	color: rgb(255, 166, 64);
 	padding: 0.5em 0.5em 0.5em;
