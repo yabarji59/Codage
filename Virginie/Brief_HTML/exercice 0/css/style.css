@@ -211,21 +211,24 @@ footer p {
 } */
 
 /* Tablette */
-/* @media screen and (min-width: 768px) and (max-width: 991px) {
-    header {
-        background-position: top right;
-    }
-} */
-
-/* Mobile */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
     figure {
         width: 50%;
     }
 
-    /* #espece {
-        height: max-content;
-    } */
+    .galerie {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    figure {
+        width: 75%;
+    }
 
     .video-hibou {
         width: 100%;
@@ -238,12 +241,5 @@ footer p {
     iframe {
         width: 90%;
         height: 90%;
-    }
-
-    .galerie {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 }
