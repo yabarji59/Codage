@@ -1,7 +1,7 @@
 headerElement = `<header class="header">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">ShopWendy</a>
+        <a class="navbar-brand" href="index.html">ShopWendy <img width = 50px src="./icon/vans.png"></img></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
             aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
