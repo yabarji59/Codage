@@ -110,6 +110,14 @@ main {
     margin-bottom: 3%;
 }
 
+.vcn{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+
 .left-content{
     flex: 3;
 
