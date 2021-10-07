@@ -1,4 +1,5 @@
-<header class="titre">
+headerElement =
+`<header class="titre">
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Accueil</a>
@@ -29,4 +30,5 @@
     <div class="mon-titre">
         <h1>Hiboux et Chouettes</h1>
     </div>
-</header>
+</header>`;
+document.getElementById("header").innerHTML = headerElement;

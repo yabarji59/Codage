@@ -1,4 +1,5 @@
-<footer>
+footerElement =
+`<footer>
     <div>
         <a href="#">
             <figure>
@@ -7,4 +8,5 @@
         </a>
         <p>2021 Virginie Finez</p>
     </div>
-</footer>
+</footer>`;
+document.getElementById("footer").innerHTML = footerElement;
