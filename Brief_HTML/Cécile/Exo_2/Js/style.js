@@ -3,8 +3,8 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
   // Change Brand Font
   'navbar-brand': {
-    'fontFamily': ''Tahoma', sans-serif',
-    'fontSize': [{ 'unit': 'em', 'value': 5 }],
+    'fontFamily': 'Tahoma',
+    'fontSize': [{ 'unit': 'em', 'value': 2 }],
     'fontWeight': 'bold'
   },
   // Change Navigation Color
@@ -34,4 +34,9 @@ export default StyleSheet.create({
   'a:hover': {
     'color': '#E994A2'
   }
+});
+
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
 });
