@@ -15,7 +15,7 @@ headerElement = `<header class="header">
                     <a class="nav-link " href="vans.html">Vans</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="puma.html">Puma</a>
+                    <a class="nav-link " href="adidas.html">Adidas</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="contact.html">Contact</a>
