@@ -7,26 +7,26 @@
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
         <title>Responsive, balises sémantiques</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
         
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+        </script>
+
+        <script> 
+              $(function(){
+              $("#header").load("header.html"); 
+              $("#footer").load("footer.html"); 
+            });
+        </script> 
     </head>
 
     <body>
-        <header>
-            <nav>
-                <ul class="">
-                    <li class="" id="">Home</li>
-                    <li class="" id="">Nos projets</li>
-                    <li class="" id="">Notre formation</li>
-                    <li class="" id="">Contact</li>
-                </ul>
-            </nav>
-            <h1>TECHNOLOGIES</h1>
-
-        </header>
+        <div id="header"></div>
 
         <content>
-           
             <aside>
                 <div class="formation">
                     <h4>Formation Simplon</h4>
@@ -66,18 +66,8 @@
             </article>
         </content>
 
-        <footer>
-            <section class="reseaux">
-                <p>Suivez-nous sur les réseaux sociaux !</p>
-                    <a href="https://www.facebook.com/SimplonHDF" target="_blank">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-            </section>
-            <section class="newsletter">
-                <p>Abonnez-vous à notre newsletter!</p>
-                 <input text="newsletter" placeholder="Inscrivez votre mail"></input>
-                 <button class="btn-go">Go!</button>
-            </section>
-        </footer>
+        <div id="footer"></div>
+
+        <script src="js/script.js"></script>
     </body>
 </html>
