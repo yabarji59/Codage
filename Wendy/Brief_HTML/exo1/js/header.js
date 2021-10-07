@@ -9,10 +9,13 @@ headerElement = `<header class="header">
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="nike.html">Nike</a>
+                    <a class="nav-link " aria-current="page" href="nike.html">Nike</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="vans.html">Vans</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="puma.html">Puma</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="contact.html">Contact</a>
