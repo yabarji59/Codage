@@ -1,92 +1,199 @@
 .body {
-  padding: 30px;
-  background-color: #fcfcfc;
+  display: block;
+  margin: 8px;
+}
+
+.header_container {
+  background-image: url("../image/photoFond4-800x369.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 275px;
+  width: 100%;
+  text-align: center;
+  font-size: medium;
 }
 
 .picture {
   background-image: url("../image/developpeur.jpg");
   background-size: cover;
   background-position: center;
-  padding: 50px;
-  height: 300px;
+  height: 500px;
   width: 100%;
-  opacity: 0.1;
+  opacity: 0.2;
   position: absolute;
 }
-.div1 {
-  padding: 50px;
-  height: 300px;
+
+navbar {
+  height: 150px;
   width: 100%;
   text-align: center;
-  position: relative;
+}
+
+.logo {
+  color: rgb(240, 207, 213) transparent;
+  float: left;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 10px;
+}
+
+navbar ul {
+  float: right;
+  margin-right: 20px;
+}
+
+navbar ul li {
+  display: inline-block;
+  line-height: 10px;
+  margin: 0 5px;
+}
+
+navbar ul li a {
+  color: rgba(24, 73, 163, 0.877);
+  font-size: 15px;
+  display: block;
+  text-align: center;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+  background-color: #7dc7ff;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
 }
 
 .menu {
-  width: 95%;
-  height: 300px;
+  background-color: pink transparent;
+  width: 100%;
+  height: 140px;
   display: inline-block;
   box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
-.choice {
-  background-image: url("../image/mimiTransp.jpg");
-  background-size: cover;
-  background-position: center center;
+
+.div2 {
+  height: 450px;
+  width: 100%;
+  display: block;
 }
 
-.div2,
-.div3,
-.div4,
-.div5,
-.div6 {
-  padding: 5px;
-  height: 500px;
-  width: 95%;
-}
 .text {
   background-image: url("../image/fondEcranMimi3.jpg");
-    background-position: center center;
-    width: 95%;
-  height: 400px;
-  margin: auto;
+  background-position: center center;
+  width: 100%;
+  height: 450px;
   box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-  justify-content: space-around;
 }
-#col1 {
+
+.row-1 {
+  height: 450px;
+  width: 100%;
+  display: inline-block;
+  padding-top: 5px;
+}
+
+div.row-1-1 {
+  padding-top: 30px;
+  padding-left: 30%;
+}
+
+div.row-1-2 {
+  padding-top: 20px;
+  padding-left: 30px;
+  height: 250px;
+  text-align: center;
+}
+
+div.row-1-2 ul li {
+  display: flex;
+  font-size: 20px;
+}
+
+nav {
+  padding-left: 200px;
+}
+
+hr {
+  width: 50%;
+}
+
+span.personnalite {
+  font-weight: bold;
+}
+
+nav.colonne1 {
   float: left;
-  width: 160px;
-  height:400px;
+  width: 300px;
+  height: 375px;
   align-content: center;
 }
 
-#col2-1 {
-  position: relative;
-    text-align: justify;
-    font-weight: bold;
-    font-size: medium;
-    height:400px;
-    width: 800px;
+article {
+  padding-right: 270px;
+  padding-top: 100px;
 }
-#col3 {
+
+.colonne2 {
   float: right;
-}
-.header {
-  background-image: url("../image/photoFond4-800x369.jpg");
-  background-size: cover;
-  background-position: center center;
-  text-align: center;
-  font-size: medium;
-  fill-opacity: inherit;
+  height: 375px;
+  width: 800px;
 }
 
-.footer {
-  background-color: white;
-  background-size: cover;
-  text-align: center;
+.title {
+  float: left;
+  font-size: 30px;
+  width: 100%;
 }
 
-/** 
-1- to do : espace entre colonne et ligne des choix;
-2- refaire le menu en mode colonne et ligne;
-3- remplir les autres categories du choix du menu;
-4- rendre la photo opaque ;
- **/
+.lead {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.footer_container {
+  background-color: rgb(199, 239, 255);
+  background-size: cover;
+  text-align: center;
+  font-weight: bold;
+  height: 50px;
+  padding-top: 0.5px;
+}
+
+@media (max-width: 952) {
+  a.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  @media (max-width: 600px) {
+    nav,
+    article {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+/* TODO
+** 1- espace entre colonne et ligne des choix;
+** 2- refaire le menu en mode colonne et ligne;
+** 3- remplir les autres categories du choix du menu;
+** 4- rendre la photo opaque ;
+** 5- Ajuster pages secondaires ;
+*/
