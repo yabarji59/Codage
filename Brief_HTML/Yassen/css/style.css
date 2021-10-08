@@ -7,22 +7,161 @@ html {
 }
 
 body {
+    display: block;
+
+    margin: 0 auto;
     margin: 0;
     font-size: 1.6rem;
-    font-family: 'Lato', sans-serif;
+    
 }
 
 header {
     background-color: salmon;
     color: white;
-    padding: 2rem 0;
+   
 }
 
 .container {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 1rem;
+   
 }
+/* Recette */
+#recette .element {
+  width: 25%;
+  padding: 0.625rem;
+  text-align: center;
+}
+
+.element img {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+
+#atelier {
+  background:linear-gradient(to top, red, yellow);
+  color: white;
+}
+
+#atelier h2 {
+  color: white;
+}
+
+#atelier .element {
+  display: flex;
+  
+  width: 50%;
+  padding: 0.625rem;
+}
+
+.media, .media-detail {
+  width: 50%;
+}
+
+.media iframe {
+  width: 100%;
+  padding-right: 0.625rem;
+}
+
+
+/* COMING SOON */
+#vid {
+  position: relative;
+  max-height: 25rem;
+  overflow: hidden;
+  padding: 0;
+}
+
+#vid video {
+  width: 100%;
+}
+
+#vid .container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to bottom, red 10%, rgba(234,34,45,0) 100%);
+  max-width: 100%;
+  min-height: 25rem;
+}
+
+#vid h2 {
+  color: white;
+}
+
+#vid table {
+  background-color: white;
+  border: 5px solid #ea222d;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 3.75rem;
+}
+
+#vid tr {
+  padding: 0.312rem 0;
+}
+
+#vid th, #vid td {
+  padding: 0.312rem 0;
+}
+  
+#vid th {
+  font-weight: bold;
+  border-bottom: 0.062rem solid #ea222d;
+}
+
+#vid td {
+  text-align: center;
+}
+
+
+
+/* CONTACT */
+#contact .element {
+  width: 50%;
+}
+
+#contact .element iframe {
+  width: 100%;
+  min-height: 23.125rem;
+}
+
+.form-group {
+  padding: 10px 0;
+}
+
+form {
+  padding: 0 1.562rem;
+}
+
+input, select, textarea {
+  width: 100%;
+  min-height: 1.875rem;
+  margin-top: 0.312rem;
+  border-radius: 0.312rem;
+  box-shadow: none;
+  border: 1px solid #666;
+}
+
+select {
+  height: 1.875rem;
+}
+
+input[type="submit"] {
+  color: #ea222d;
+  border: 0.062rem solid #ea222d;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ea222d;
+  color: white;
+}
+
 
 /* à partir de la tablette  */
 @media screen and (min-width: 768px) {
@@ -31,7 +170,7 @@ header {
     }
 
     .recipe {
-        padding: 0 1rem;
+        padding: 0;
     }
 }
 
@@ -60,8 +199,7 @@ li {
   
   a {
     display: block;
-    padding: 8px;
-    background-color: #dda5a8;
+    padding: 8px;   background:linear-gradient(to top, red, yellow);
     
   }
  
@@ -75,19 +213,21 @@ li {
   
  
   li a {
+    float: left;
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 20px;
     text-decoration: none;
   }
   
   /* Changer la couleur pour cliquer*/
   li a:hover {
-    background-color: #dda5a8;
+   background:linear-gradient(to top, rgb(165, 216, 45), yellow);
+
   }
   .active {
-    background-color: #b3b0b0;
+    background-color: #b8c92d;
   }
   ul {
     position: fixed;
@@ -95,21 +235,43 @@ li {
     width: 100%;
   }
   nav{
-      background-color: #dda5a8;
+    
+    background-color: #fd3e04;
+
+
     position: fixed;
     top: 0;
     width: 100%;
   }
-  img{
-      width: 10%;
-      
-  }
-  div.Menu{
-    background-image: url('img/simplon\ img.jpg'); 
-    margin: 0 0 32px;
-    font-size: 32px;
-    line-height: 600px;
-    font-family: "Montserrat",arial,sans-serif;
-    font-weight: 700;
-    color: rgb(170, 38, 38);
-}  
+  
+ 
+
+
+/* FOOTER */
+footer {
+  background:linear-gradient(to top, red, yellow);
+  color: white;
+}
+
+footer p {
+  margin: 0;
+  padding: 1.25rem 0;
+}
+
+footer .elements {
+  justify-content: space-between;
+}
+
+.social ul li {
+  display: inline-block;
+  padding-right: 0.312rem;
+}
+
+.social ul li a {
+
+  color: white;
+}
+
+.social ul li a:hover {
+  color: whitesmoke;
+}
