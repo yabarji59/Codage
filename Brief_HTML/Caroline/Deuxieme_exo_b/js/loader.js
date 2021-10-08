@@ -1,3 +1,3 @@
 $(document).ready(function() {
-    $('menu').load('nav.html');
+    $('#root').load('nav.html');
     $('footer').load('footer.html')});

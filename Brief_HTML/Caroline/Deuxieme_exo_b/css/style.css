@@ -17,13 +17,21 @@ a {
     text-decoration      : none;
 }
 
-menu {
-    height               : var(--menu-height);
+
+/* MENU-------------------------------------------------------------------------*/
+/*hide burger menu*/
+#menu-responsive, #hamburger_icon {
+    display: none;
+}
+
+
+.topnav{
+    display              : flex;
     width                : 100%;
+    height               : var(--menu-height);
     margin-block-start   : 0;
     margin-block-end     : 0;
     padding-inline-start : 0;
-    display              : flex;
     position             : fixed;
     top                  : 0;
     left                 : 0;
@@ -34,30 +42,22 @@ menu {
     text-transform       : uppercase;
 
 }
-
-/* MENU-------------------------------------------------------------------------*/
 #menu-wide {
     flex                 : 1;
     margin-right         : 10%;
     overflow             : hidden;
 }
-
 #monogram {
     margin-left          : 10%;
     flex                 : 1;
 }
-
 .nav-name {
     padding-left         : 1%;
 }
 
-#hamburger_icon img {
-    height               : 50px;
-}
-
 #menu-wide > ul {
     display              : flex;
-    text-align           : center;
+    text-align           : right;
 }
 
 #menu-wide> ul > li {
@@ -65,9 +65,6 @@ menu {
     flex                 : 1;
 }
 
-#menu-responsive, #hamburger_icon {
-    display               : none;
-}
 
 /*HEADER ----------------------------------------------------------------------------*/
 
@@ -88,53 +85,62 @@ footer {
     }
 
     /* position home link at left and hamburger will be positionned at right */
-   menu {
-        width           : 100%;
-        display         : flex;
-        align-items     : center;
+    #monogram {
+        flex-grow         : 1;
+    }
+
+
+    /*disable horizontal scroll*/
+    #root {
+        position        : relative;
         overflow-x      : hidden;
-        position        : fixed;
     }
 
-   #monogram {
-      flex-grow         : 1;
-  }
+    /*show responsive menu and position at the right of the screen*/
+    #menu-responsive {
+        display          : block;
+        position         : absolute;
+        margin           : 0;
+        right            : 0;
+        width            : 100vw;
+        height           : 100vh;
 
-   #menu-responsive {
-       display          : block;
-       position         : absolute;
-       margin           : 0;
-       right            : 0;
-       top              : 0;
-       width            : 100vw;
-       height           : 100vh;
-       z-index          : 99;
-       transform-origin : 0% 0%;
-       transform        : translate(200%, 0);
-       transition       : transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-   }
+        z-index          : 99;
 
-       /* position responsive menu at the right of the screen */
+        transform-origin : 0% 0%;
+        transform        : translate(200%, 0);
+
+        transition       : transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    }
+
     #menu-responsive ul {
-        display       : flex;
-        flex-direction: column;
-        position      : fixed;
-        margin        : 0;
-        right         : 0;
-        top           : var(--menu-height);
-        min-width: 50vw;
-        height   : 100vh;
-        padding: 56px 0 0;
-        text-align: left;
+        display          : flex;
+        flex-direction   : column;
 
-        background: #ededed;
-        list-style-type: none;
+        position         : absolute;
+        margin           : 0;
+        right            : 0;
+        top              : var(--menu-height);
+        min-width        : 50vw;
+        height           : 100vh;
+        text-align       : right;
+        padding-top      : 2%;
+        padding-right    : 10%;
+
+        background       : #f5f5f5;
+        list-style-type  : none;
     }
+
+    #menu-responsive ul li {
+        padding-top: 2%;
+    }
+
 
     #menu-responsive.open {
         transform: none;
         position: fixed;
     }
+
 
     #hamburger_icon {
         display: block;
@@ -149,5 +155,11 @@ footer {
         user-select: none;
         cursor: pointer;
     }
+
+
+    #hamburger_icon img {
+        height               : 50px;
+    }
+
 
 }

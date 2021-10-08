@@ -1,7 +1,7 @@
 function showMenu() {
     var menu = document.getElementById("menu-responsive");
     var icon = document.getElementById("hamburger_icon");
-    var root = document.getElementById("main-menu");
+    var root = document.getElementById("root");
     if (menu.className === "") {
         menu.className = "open";
         icon.className = "open";
