@@ -18,13 +18,25 @@ a {
 }
 
 
+
+#root a{
+    color                : lightgray;
+}
+
+#root a:hover {
+    color                : #c99133;
+}
+
+#root a:active {
+    color                : #ff6f00;
+    font-weight          : bold;
+}
+
 /* MENU-------------------------------------------------------------------------*/
 /*hide burger menu*/
 #menu-responsive, #hamburger_icon {
     display: none;
 }
-
-
 .topnav{
     display              : flex;
     width                : 100%;
@@ -43,23 +55,21 @@ a {
 
 }
 #menu-wide {
-    flex                 : 1;
+    flex                 : 3;
     margin-right         : 10%;
     overflow             : hidden;
 }
 #monogram {
     margin-left          : 10%;
     flex                 : 1;
-}
-.nav-name {
-    padding-left         : 1%;
+    color                : #c99133;
+    font-weight          : bold;
 }
 
 #menu-wide > ul {
     display              : flex;
     text-align           : right;
 }
-
 #menu-wide> ul > li {
     display              : inline;
     flex                 : 1;
@@ -69,16 +79,18 @@ a {
 /*HEADER ----------------------------------------------------------------------------*/
 
 header {
-
-
+    height: 450px;
+    background: linear-gradient(black,#0f2629,#457c82);
+    display: block;
 }
 
+/* FOOTER ---------------------------------------------------------------------------*/
 footer {
     overflow: hidden;
 }
 
 /* RESPONSIVE MENU  -----------------------------------------------------------------*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1100px) {
     /* hide classic menu */
     #menu-wide {
         display: none;
@@ -127,7 +139,8 @@ footer {
         padding-top      : 2%;
         padding-right    : 10%;
 
-        background       : #f5f5f5;
+        background       : transparent;
+        backdrop-filter: blur(6px);
         list-style-type  : none;
     }
 
@@ -156,10 +169,19 @@ footer {
         cursor: pointer;
     }
 
-
     #hamburger_icon img {
         height               : 50px;
     }
 
 
+
+   .shown {
+        display: block;
+    }
+
+   .hidden {
+        display: none;
+    }
+
 }
+
