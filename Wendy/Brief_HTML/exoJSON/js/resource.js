@@ -7,7 +7,7 @@ xhr.onload = function () {
   console.log(resources);
 
   for (const resource of resources) {
-    let resourceElement = `<div>
+    let resourceElement = `<div style="background: ${resource.color}">
 <div>
     ${resource.id}</br>
     ${resource.name}</br>
