@@ -3,12 +3,11 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 70%;
 }
 
 body {
-    display: block;
-
+ 
     margin: 0 auto;
     margin: 0;
     font-size: 1.6rem;
@@ -16,9 +15,45 @@ body {
 }
 
 header {
-    background-color: salmon;
+  
     color: white;
    
+}
+
+/* PRESENTATION */
+#presentation {
+  /* background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgba(255,255,255,100) 100%), url("../img/simplon\ img.jpg"); */
+  background-image: url("../img/simplon\ img.jpg");
+ 
+  background-size: cover;
+}
+
+
+
+#presentation .container {
+  padding: 250px;
+  background-size: cover;
+}
+
+h1, #presentation p {
+  display: inline-block;
+  box-shadow: 0.625rem 0.625rem 1.875rem rgb(243, 96, 96);  
+  padding: 10px;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 30px;
+  text-transform:uppercase;
+  background-color: white;
+  color:#fd3e04;
+}
+
+#presentation p {
+  font-size: 15px;
+background-color: #fd3e04;
+margin-left: 300px;
+  color: white;
 }
 
 .container {
@@ -26,51 +61,100 @@ header {
     margin: 0 auto;
    
 }
-/* Recette */
-#recette .element {
-  width: 25%;
-  padding: 0.625rem;
-  text-align: center;
+
+/* nav bar */
+
+li {
+  display: inline;
+ 
 }
 
-.element img {
-  width: 50%;
-  margin: 0 auto;
+
+a {
   display: block;
-}
-
-
-#atelier {
+  padding: 8px;   
   background:linear-gradient(to top, red, yellow);
-  color: white;
-}
 
-#atelier h2 {
-  color: white;
-}
-
-#atelier .element {
-  display: flex;
   
-  width: 50%;
-  padding: 0.625rem;
 }
 
-.media, .media-detail {
-  width: 50%;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+ 
 }
 
-.media iframe {
+
+li a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 15px;
+ font-size:small;
+ 
+}
+
+/* Changer la couleur pour cliquer*/
+li a:hover {
+ background:linear-gradient(to top, rgb(165, 216, 45), yellow);
+ text-decoration-line: none;
+ color:white;
+
+}
+.active {
+  background-color: #b8c92d;
+ 
+}
+ul {
+  position: fixed;
+  top: 0;
   width: 100%;
-  padding-right: 0.625rem;
+  
+}
+nav{
+  
+  background-color: #fd3e04;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 
-/* COMING SOON */
+
+
+/* Recette */
+
+.recipe img {
+  width: 100%;
+  max-height: 600px;
+}
+#recette .recipes {
+  width: 100%;
+  padding: 10px;
+  margin: 30px;
+  
+  
+}
+#recette .recipe {
+  margin: 30px;
+  width: 280px;
+  max-height: 500px;
+
+  
+}
+#citron{
+  
+  height: 130px;
+}
+
+
+/* VIDEO Atelier */
 #vid {
   position: relative;
-  max-height: 25rem;
-  overflow: hidden;
   padding: 0;
 }
 
@@ -83,18 +167,19 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background-image: linear-gradient(to bottom, red 10%, rgba(234,34,45,0) 100%);
+  background-image: linear-gradient(to bottom, #fd3e04, rgba(234,34,45,0) 100%);
   max-width: 100%;
-  min-height: 25rem;
+  min-height: 60%;
 }
 
 #vid h2 {
   color: white;
+  text-align: center;
 }
 
 #vid table {
   background-color: white;
-  border: 5px solid #ea222d;
+  border: 5px solid #ddea22;
   width: 50%;
   margin: 0 auto;
   margin-top: 3.75rem;
@@ -105,12 +190,13 @@ header {
 }
 
 #vid th, #vid td {
-  padding: 0.312rem 0;
+  padding: 0;
+  width: 50%;
 }
   
 #vid th {
   font-weight: bold;
-  border-bottom: 0.062rem solid #ea222d;
+  border-bottom: 0.062rem solid #ccea22;
 }
 
 #vid td {
@@ -122,7 +208,9 @@ header {
 /* CONTACT */
 #contact .element {
   width: 50%;
+ 
 }
+
 
 #contact .element iframe {
   width: 100%;
@@ -146,19 +234,16 @@ input, select, textarea {
   border: 1px solid #666;
 }
 
-select {
-  height: 1.875rem;
-}
 
 input[type="submit"] {
-  color: #ea222d;
-  border: 0.062rem solid #ea222d;
+  color: rgb(165, 216, 45);
+  border: 0.062rem solid rgb(165, 216, 45);
   font-size: 1rem;
   cursor: pointer;
 }
 
 input[type="submit"]:hover {
-  background-color: #ea222d;
+  background:linear-gradient(to top, rgb(165, 216, 45), yellow);
   color: white;
 }
 
@@ -185,81 +270,25 @@ input[type="submit"]:hover {
     }
 }
 
-.recipe img {
-    width: 100%;
-}
-
-
-
-
-li {
-    display: inline;
-  }
- 
-  
-  a {
-    display: block;
-    padding: 8px;   background:linear-gradient(to top, red, yellow);
-    
-  }
- 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(0, 0, 0);
-  }
-  
- 
-  li a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 20px 20px;
-    text-decoration: none;
-  }
-  
-  /* Changer la couleur pour cliquer*/
-  li a:hover {
-   background:linear-gradient(to top, rgb(165, 216, 45), yellow);
-
-  }
-  .active {
-    background-color: #b8c92d;
-  }
-  ul {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  nav{
-    
-    background-color: #fd3e04;
-
-
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
- 
 
 
 /* FOOTER */
 footer {
   background:linear-gradient(to top, red, yellow);
   color: white;
+  ;
+  
 }
 
 footer p {
-  margin: 0;
+  margin: 0px;
   padding: 1.25rem 0;
+ 
 }
 
 footer .elements {
   justify-content: space-between;
+  display: flex;
 }
 
 .social ul li {
