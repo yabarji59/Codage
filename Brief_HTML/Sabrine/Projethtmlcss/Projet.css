@@ -1,0 +1,109 @@
+body{
+    background-image:url(photos/fondecran.png);
+    border:3px solid rgb(91, 48, 13) ;
+}
+
+.tartesauxfraises{
+margin: auto;
+width: 500px;
+height: 400px;  
+margin: 50px;
+border:3px solid black;
+
+}
+.tartesaucitron{
+    width: 500px;
+    height: 400px;
+    margin: 50px;
+    border:3px solid black;
+
+
+}
+.layercakelicorne{
+    width: 500px;
+    height: 400px;
+    margin: 50px;
+    border:3px solid black;
+
+    
+}
+.Fondantauchocolat{
+    width: 500px;
+    height: 400px;
+    margin: 50px;
+    border: 3px solid black;
+
+}
+h1{
+    text-shadow: grey 1px 0 10px;
+    text-align: center;
+    font-size: 50px;
+}
+h2{
+    text-shadow: grey 1px 0 10px;
+   
+}
+p
+{
+    text-align: center;
+    font-size: 23px;
+    padding: 5px;
+    margin-bottom: 50px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+ul{
+    list-style-type: none;
+    
+
+}
+
+
+.rc{
+    text-align: center; 
+ 
+}
+#icones{
+    display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  font-size: 30px;
+  color: rgb(91, 48, 13);
+  
+}
+.ingredients{
+    text-align: center;
+    font-size: 23px;
+    padding: 5px;
+    margin-bottom: 50px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+.Menu{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 23px;
+    text-align: left;
+    background-color: #ce9177;
+    border:3px solid #c48367;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    width: 96,5%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0%;
+    padding-top: 40px;
+}
+.link{
+    color: black;
+    font-weight: bold;
+}
+
+
+footer{
+    background-color: #ce9177;
+    border:3px solid #c48367;
+    
+
+}
+.ingredients{
+    border:3px solid #c48367;
+}
