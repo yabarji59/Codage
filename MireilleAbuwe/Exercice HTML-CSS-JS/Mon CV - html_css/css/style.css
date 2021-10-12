@@ -17,16 +17,10 @@
   background-image: url("../image/developpeur.jpg");
   background-size: cover;
   background-position: center;
+  opacity: 0.2;
   height: 500px;
   width: 100%;
-  opacity: 0.2;
   position: absolute;
-}
-
-navbar {
-  height: 150px;
-  width: 100%;
-  text-align: center;
 }
 
 .logo {
@@ -36,7 +30,19 @@ navbar {
   padding-right: 35px;
   padding-top: 10px;
 }
+/* ROtation du Logo
+.linkedin {
 
+  -o-transform: rotateX(180deg);
+  transform:rotate(180deg);
+
+}
+*/
+navbar {
+  height: 150px;
+  width: 100%;
+  text-align: center;
+}
 navbar ul {
   float: right;
   margin-right: 20px;
@@ -50,7 +56,8 @@ navbar ul li {
 
 navbar ul li a {
   color: rgba(24, 73, 163, 0.877);
-  font-size: 15px;
+  font-size: 10px;
+  font-weight: bold;
   display: block;
   text-align: center;
   padding: 7px 13px;
@@ -81,7 +88,8 @@ a:hover {
 .menu {
   background-color: pink transparent;
   width: 100%;
-  height: 140px;
+  height: 85px;
+  padding-bottom: 12px;
   display: inline-block;
   box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
@@ -104,7 +112,7 @@ a:hover {
   height: 450px;
   width: 100%;
   display: inline-block;
-  padding-top: 5px;
+  padding-top: 50px;
 }
 
 div.row-1-1 {
@@ -113,7 +121,7 @@ div.row-1-1 {
 }
 
 div.row-1-2 {
-  padding-top: 20px;
+  padding-top: 5px;
   padding-left: 30px;
   height: 250px;
   text-align: center;
@@ -125,11 +133,20 @@ div.row-1-2 ul li {
 }
 
 nav {
-  padding-left: 200px;
+  padding-left: 100px;
 }
 
 hr {
-  width: 50%;
+  width: 20vh;
+  padding-left: 10px;
+}
+
+hr.verticale {
+  border: none;
+  border-left: 1px solid hsla(200, 10%, 50%, 100);
+  height:55vh;
+  width:1px;
+  display: inline-block;
 }
 
 span.personnalite {
@@ -144,8 +161,8 @@ nav.colonne1 {
 }
 
 article {
-  padding-right: 270px;
-  padding-top: 100px;
+  padding-right: 100px;
+  padding-top: 10px;
 }
 
 .colonne2 {
@@ -167,12 +184,17 @@ article {
 }
 
 .footer_container {
-  background-color: rgb(199, 239, 255);
+  background-image: url("../image/developpeur1.jpg");
   background-size: cover;
+  background-position:center;
+  /*background-color: rgb(199, 239, 255);
+  opacity: 0.2;
+  
+  background-size: cover;*/
   text-align: center;
   font-weight: bold;
-  height: 50px;
-  padding-top: 0.5px;
+  height: 70px;
+  padding-top: 10px;
 }
 
 @media (max-width: 952) {
@@ -182,7 +204,7 @@ article {
   }
 
   @media (max-width: 600px) {
-    nav,
+    navbar,
     article {
       width: 100%;
       height: auto;
